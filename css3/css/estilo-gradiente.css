@@ -1,0 +1,37 @@
+/*#box{
+	width: 300px;
+	height: 300px;
+	background: url("../img/camera.png");
+}
+
+#box h1{
+	background: rgba(255,255,255,0.2);
+	border-bottom: 2px solid #FFF;
+}
+
+#box p{
+	color: white;
+}*/
+
+#box {
+	width: 300px;
+	height: 300px;
+
+	/*
+	www.w3school.com/css/css3_gradients.asp
+	*/
+
+	/*
+	Gradiente linear escolhendo a direção to top, to right, to left, to bottom
+	background: linear-gradient(to right, red, yellow);
+	*/
+
+	/*
+	Gradiente linear escolhendo "rotação"
+	background: linear-gradient(80deg, red, yellow);
+	*/
+
+
+	/*Gradiente radial*/
+	background: radial-gradient(red, yellow, green);
+}
