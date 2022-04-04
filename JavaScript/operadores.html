@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf8">
+		<meta name="author" content="João Mateus">
+
+		<title>Operadores - JS</title>
+		<!-- Declarando java Script, no inicio é carregado prímeiro -->
+		<script type="text/javascript">
+
+			//Operadores de comparação
+			/*
+			==		|===						|!=			|<>			|!==								|
+			igual	|idêntico e/ou mesmo tipo?	|Diferente	|Diferente	|Não idêntico e/ou tipo diferente? 	|
+			-------------------------------------------------------------
+			<			|>			|<=				| >= 			|
+			menor que 	|maior que	|Menor ou igual	|Maior ou igual	|
+				
+			*/
+
+			//Operadores lógicos
+			/*
+			&&	e
+			||	ou
+			!	negação
+
+			*/
+
+			//Operadores aritméticos
+			/*
+			+	|Adição (Soma valores)
+			-	|Subtração (Diferença entre valores)
+			*	|Multiplicação (Produto dos valores)
+			/	|Divisão (Quociente dos valores)
+			%	|Módulo (Resto existente em uma operação de divisão)
+			++	|Incremento (Pré/pós incremento)
+			--	|Decremento (Pré/pós decremento)
+			*/
+
+			// parseInt
+			// parseFloat
+
+			var num1 = prompt('Digite o valor A:');
+			var num2 = prompt('Digite o valor B:');
+
+			num1 = parseFloat(num1);
+			num2 = parseFloat(num2);
+			var temp = 0;
+
+			document.write('A soma entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 + num2) + '<br />');
+			document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 - num2) + '<br />');
+			document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 * num2) + '<br />');
+			document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br />');
+			document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br />');
+			//incremento (pré/pós) num1
+			temp = num1;
+			++temp;
+			document.write('O incremento (pré) de ' + num1 + ' é: ' + (temp) + '<br />');
+			temp = num1;
+			temp++;
+			document.write('O incremento (pós) de ' + num1 + ' é: ' + (temp) + '<br />');
+
+			//incremento (pré/pós) num2
+			temp = num2;
+			++temp;
+			document.write('O incremento (pré) de ' + num2 + ' é: ' + (temp) + '<br />');
+			temp = num2;
+			temp++;
+			document.write('O incremento (pós) de ' + num2 + ' é: ' + (temp) + '<br />');
+			
+
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
