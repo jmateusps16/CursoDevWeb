@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf8">
+		<meta name="author" content="João Mateus">
+
+		<title>Array Multidimensionais - JS</title>
+		<!-- Declarando java Script, no inicio é carregado prímeiro -->
+		<script type="text/javascript">
+			//declaracao do array
+			var lista_coisas = Array();
+
+			//Arrays multidimensionais
+			lista_coisas['frutas'] = Array();
+			lista_coisas['pessoas'] = ['João', 'José', 'Maria']
+
+			//inserindo valores no array
+			lista_coisas['frutas'][1] = 'Banana';
+			lista_coisas['frutas'][2] = 'Maça';
+			lista_coisas['frutas'][3] = 'Pêra';
+			lista_coisas['frutas'][4] = 'Uva';
+
+			//recuperar valor
+			document.write(lista_coisas['frutas'][2]);
+			document.write('<br /><br />')
+			document.write(lista_coisas['pessoas'][2])
+
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
