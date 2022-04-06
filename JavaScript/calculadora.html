@@ -10,6 +10,54 @@
 
 		<script type="text/javascript">
 			
+			function calcular(){
+				var operacao = document.getElementById('operacao').value;
+
+				var num1 = document.getElementById('num1').value;
+				var num2 = document.getElementById('num2').value;
+
+				if(num1 == '' || num1 == null){
+					alert('Por gentileza digite um número válido pra operação');
+					return false;
+				}
+
+				if(num2 == '' || num2 == null){
+					alert('Por gentileza digite um número válido pra operação');
+					return false;
+				}
+
+				var resultado = null;
+
+				num1 = parseFloat(num1);
+				num2 = parseFloat(num2);
+
+				
+				switch(operacao) {
+
+					case '1': //subtração
+						resultado = num1 - num2;
+						break;
+
+					case '2': //adição
+						resultado = num1 + num2;
+						break;
+
+					case '3': //multiplicação
+						resultado = num1 * num2;
+						break;
+
+					case '4': //divisão
+						resultado = num1 / num2;
+						break;
+
+					default:
+						alert('Selecione uma operação valida!');
+						return false;
+				}
+
+				document.getElementById('resultado').value = resultado;
+			}
+
 		</script>
 	</head>
 
@@ -24,11 +72,11 @@
 
 			<div class="row">
 				<div class="col-md-4">
-					<input type="text" class="form-control" placeholder="Digite um número" />
+					<input id="num1" type="text" class="form-control" placeholder="Digite um número" />
 				</div>
 
 				<div class="col-md-4">
-					<select class="form-control">
+					<select id="operacao" class="form-control">
 						<option value="">--Selecione uma operação</option>
 						<option value="1">Subtração</option>
 						<option value="2">Adição</option>
@@ -38,7 +86,7 @@
 				</div>
 
 				<div class="col-md-4">
-					<input type="text" class="form-control" placeholder="Digite um número"/>
+					<input id="num2" type="text" class="form-control" placeholder="Digite um número"/>
 				</div>
 			</div>
 
@@ -50,14 +98,14 @@
 				<div class="col-md-4"></div>
 
 				<div class="col-md-4">
-					<button type="button" class="btn btn-lg btn-primary pull-right">Calcular</button>
+					<button type="button" class="btn btn-lg btn-primary pull-right" onclick="calcular()">Calcular</button>
 				</div>
 			</div>
 
 			<hr />
 
 			<div class="well">
-				Resultado: <input type="text" class="form-control" readonly/>
+				Resultado: <input id="resultado" type="text" class="form-control" readonly/>
 			</div>
 		</div>
 	</body>
