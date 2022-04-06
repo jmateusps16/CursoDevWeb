@@ -7,21 +7,16 @@
 		<title>Eventos de Janela - JS</title>
 		<!-- Declarando java Script, no inicio é carregado prímeiro -->
 <!--
-	//Tipos de eventos de mouse
+	// onload - no carregamento da página
+	// onresize - ao redimensionar a página
 
-	onkeydown - adicionado no momento em que uma tecla é pressionada (soltando ou não a tecla)
-	onkeypress - adicionado no momento em que uma tecla é pressionada (soltando-a ou não), porém não captura todas as teclas, como por exemplo alt, ctrl, esc, shift, etc.
-	onkeyup - adicionada no momento em que a tecla é liberada.
 -->
 		<script type="text/javascript">
 
-			
 
 		</script>
 	</head>
-	<body>
-		<input onkeydown="alert('Uma tecla qualquer foi pressionada!')" type="text" id="onKey1"/>
-		<input onkeypress="alert('Uma tecla de caracteres foi pressionada!')" type="text" id="onKey2"/>
-		<input onkeyup="alert('Uma tecla qualquer foi liberada!')" type="text" id="onKey3"/>
+	<body onresize="console.log('Página redimensionada!')" onload="console.log('Página carregada com sucesso!')">
+
 	</body>
 </html>
