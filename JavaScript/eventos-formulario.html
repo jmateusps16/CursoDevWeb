@@ -7,8 +7,9 @@
 		<title>Eventos de Formulários - JS</title>
 		<!-- Declarando java Script, no inicio é carregado prímeiro -->
 <!--
-	// onload - no carregamento da página
-	// onresize - ao redimensionar a página
+	// onfocus
+	// onblur
+	// onchange
 
 -->
 		<script type="text/javascript">
@@ -17,6 +18,15 @@
 		</script>
 	</head>
 	<body>
+
+		<input onfocus="alert('O elemento foi focado');" type="text">
+		<input onblur="alert('O elemento foi desfocado');" type="text">
+		<br>
+
+		<select onchange="alert('A opção foi alterada');">
+			<option value="1">Primeira Opção</option>
+			<option value="2">Segunda Opção</option>
+		</select>
 
 	</body>
 </html>
