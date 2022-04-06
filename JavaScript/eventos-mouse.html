@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf8">
+		<meta name="author" content="João Mateus">
+
+		<title>Eventos de Mouse - JS</title>
+		<!-- Declarando java Script, no inicio é carregado prímeiro -->
+<!--
+	//Tipos de eventos de mouse
+
+	onclick - adicionado no clique do mouse
+	ondblclick - adicionado no click duplo do mouse
+	onmousedown - adicionado no clique do mouse (soltando ou não o botão)
+	onmouseover - adicionado quando cursor do mouse sobrepõe o elemento o elemento da página
+	onmouseout - adicionado quando o cursor do mouse sai da área de um elemento da página
+-->
+		<script type="text/javascript">
+
+			function msgOnClick(){
+				alert('Você pressionou e soltou o botão do mouse sobre esse elemento!')
+			};
+
+			function msgOnDblClick(){
+				alert('Você pressionou 2x o botão do mouse sobre esse elemento!')
+			};
+
+			function msgOnMouseDown(){
+				alert('Você pressionou o botão do mouse sobre esse elemento!')
+			};
+
+			function msgOnMouseOver(){
+				alert('Você passou o mouse sobre esse elemento!')
+			};
+
+			function msgOnMouseOut(){
+				alert('Você saiu do elemento!')
+			}
+
+		</script>
+	</head>
+	<body>
+		<div onclick="msgOnClick()" style="background: #CCC; height:250px; width:250px">On Click</div>
+		<div ondblclick="msgOnDblClick()" style="background: #99ff99; height:250px; width:250px">On Double Click</div>
+		<div onmousedown="msgOnMouseDown()" style="background: #ff66ff; height:250px; width:250px">On Mouse Down</div>
+		<div onmouseover="msgOnMouseOver()" style="background: #0033cc; height:250px; width:250px">On Mouse Over</div>
+		<div onmouseout="msgOnMouseOut()" style="background: #ff3300; height:250px; width:250px">On Mouse Out</div>
+	</body>
+</html>
